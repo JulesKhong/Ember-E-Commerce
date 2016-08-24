@@ -1,0 +1,7 @@
+<h3>Products</h3>
+{{log model}}
+{{#each model.products as |product|}}
+  {{product-tile product=product}}
+{{/each}}
+
+{{display-cart}}

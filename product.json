@@ -1,0 +1,24 @@
+{ "products": [{
+    "title": "Classic Leather Moto Jacket",
+    "image":  "https://www.hautelookcdn.com/products/BG622869TNR/large/5676383.jpg",
+    "description": ["Notch collar","Long sleeves with zip cuffs","Asymmetric front zip closure","Quilted shoulders and lower back", "2 front zip pockets", "Lined", "Approx. 20 inches length", "Imported"],
+    "price": 199.97
+  }, {
+    "title": "Asymmetrical Zip Crop Faux Leather Jacket",
+    "image": "https://www.hautelookcdn.com/products/MARJ688-PU110/large/5577110.jpg",
+    "description": ["Asymmetrical front zip closure","Long sleeves","Zip cuffs","Seam detail", "Moto inspired stitching", "Front zip pockets", "Lined", "Approx. 19 inches length", "Imported"],
+    "price": 69.97
+  }, {
+    "title": "Collarless Leather Jacket",
+    "image": "https://www.hautelookcdn.com/products/97600V-V6/large/5569371.jpg",
+    "description": ["Collarless","Long sleeves","Front zip closure","2 front zip pockets",  "Lined", "Approx. 21 inches length", "Imported"],
+    "price": 179.97
+  }],
+  "sizes": [{
+     "name": "Small"
+   }, {
+     "name": "Medium"
+   }, {
+     "name": "Large"
+   }]
+ }
