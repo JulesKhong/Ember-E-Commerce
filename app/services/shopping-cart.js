@@ -7,11 +7,14 @@ export default Ember.Service.extend({
     this.get('items').forEach(function(product){
       runningTotal += product.get('price');
     });
-    return runningTotal;
+    return runningTotal.toFixed(2);
   }),
 
   add(item) {
     this.get('items').pushObject(item);
   },
+  remove(item){
+    this.get('items').removeObject(item);
+  }
 
 });

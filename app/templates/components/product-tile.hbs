@@ -1,12 +1,6 @@
 <div class="col-sm-3">
-  <img src={{product.image}} alt={{product.title}} />
+{{#link-to 'product' product.id}}  <img src={{product.image}} alt={{product.title}} />
   <h5>{{product.title}}</h5>
-  <!-- <h5>Description:</h5> -->
-  <!-- <ul>
-    {{#each product.description as |description|}}
-      <li>{{description}}</li>
-    {{/each}}
-  </ul> -->
-  <p>${{product.price}}</p>
-  <button class="btn btn-default" {{action 'addToCart' product}}>Add to Cart</button>
+  <p class="product-price">${{product.price}}</p>{{/link-to}}
+
 </div>

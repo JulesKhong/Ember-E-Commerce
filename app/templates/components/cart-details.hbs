@@ -6,15 +6,17 @@
       <th>Price</th>
       <th>Quantity</th>
       <th>Total</th>
+      <th>Remove</th>
     </tr>
 
     {{#each shoppingCart.items as |item|}}
     <tr>
       <td><img class="thumbnail" src={{item.image}} alt={{product.title}} /></td>
       <td>{{item.title}}</td>
-      <td>{{item.price}}</td>
+      <td>${{item.price}}</td>
       <td>1</td>
       <td>Total</td>
+      <td><button class="btn btn-xs btn-danger" {{action 'removeFromCart' item}}>X</button></td>
     </tr>
     {{/each}}
   </table>
@@ -23,5 +25,5 @@
     {{#link-to 'store'}}<p>Keep browsing</p>{{/link-to}}
   </div>
   <div class="col-sm-3">
-    <h4>Total: {{shoppingCart.currentTotal}}</h4>
+    <h4>Total: ${{shoppingCart.currentTotal}}</h4>
   </div>

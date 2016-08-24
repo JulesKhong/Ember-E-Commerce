@@ -4,8 +4,8 @@ export default Ember.Component.extend({
   shoppingCart: Ember.inject.service(),
 
   actions: {
-    removeFromCart(item){
-      this.get('shoppingCart').remove(item);
+    addToCart(item) {
+      this.get('shoppingCart').add(item);
     }
   }
 });
