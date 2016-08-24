@@ -1,5 +1,5 @@
-<h6>Your cart:</h6>
-{{#each shoppingCart.items as |item|}}
-{{item.title}} -- {{item.price}}
+{{#link-to 'cart'}}<h6>Your cart: {{shoppingCart.items.length}}</h6>{{/link-to}}
+<!-- {{#each shoppingCart.items as |item|}}
+{{item.title}} {{item.price}}
 <br>
-{{/each}}
+{{/each}} -->

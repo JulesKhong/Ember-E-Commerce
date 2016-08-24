@@ -3,12 +3,10 @@
   <h4>{{product.title}}</h4>
   <h5>Description:</h5>
   <ul>
-    {{log product.description}}
     {{#each product.description as |description|}}
-    <li>description</li>
+      <li>{{description}}</li>
     {{/each}}
   </ul>
   <p>${{product.price}}</p>
-
   <button class="btn btn-default" {{action 'addToCart' product}}>Add to Cart</button>
 </div>
