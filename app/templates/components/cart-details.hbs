@@ -1,13 +1,27 @@
 
-  <table>
+  <table class="col-sm-9">
     <tr>
-      <th>Your Cart</th>
+      <th class="cart-title">Your Cart</th>
+      <th></th>
       <th>Price</th>
       <th>Quantity</th>
       <th>Total</th>
     </tr>
-    <td>{{product.title}}</td>
-    <td>{{product.price}}</td>
-    <td>1</td>
-    <td>Total</td>
+
+    {{#each shoppingCart.items as |item|}}
+    <tr>
+      <td><img class="thumbnail" src={{item.image}} alt={{product.title}} /></td>
+      <td>{{item.title}}</td>
+      <td>{{item.price}}</td>
+      <td>1</td>
+      <td>Total</td>
+    </tr>
+    {{/each}}
   </table>
+
+  <div class="col-sm-7">
+    {{#link-to 'store'}}<p>Keep browsing</p>{{/link-to}}
+  </div>
+  <div class="col-sm-3">
+    <h4>Total: {{shoppingCart.currentTotal}}</h4>
+  </div>

@@ -4,5 +4,5 @@ export default DS.Model.extend({
   title: DS.attr(),
   image: DS.attr(),
   description: DS.attr(),
-  price: DS.attr()
+  price: DS.attr('number')
 });
