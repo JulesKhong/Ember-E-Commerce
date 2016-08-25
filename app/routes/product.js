@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       newReview.save().then(function() {
         return product.save();
       });
-      this.transitionTo('store');
+      this.transitionTo('product', product_id);
     },
   }
 });
