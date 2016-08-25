@@ -1,0 +1,8 @@
+<div class="col-sm-6">
+  {{#each product.reviews as |review|}}
+  <hr>
+  <h5>REVIEW:</h5>
+    <p>{{review.comments}}</p>
+    <p>{{review.rating}}</p>
+  {{/each}}
+</div>
