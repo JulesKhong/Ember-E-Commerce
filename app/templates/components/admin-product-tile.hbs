@@ -1,6 +1,7 @@
 <div class="col-sm-3">
-{{#link-to 'update-product' product.id}}  <img src={{product.image}} alt={{product.title}} />
+  <img src={{product.image}} alt={{product.title}} />
   <h5>{{product.title}}</h5>
-  <p class="product-price">${{product.price}}</p>{{/link-to}}
-<button{{action 'updateFormShow'}}>Update Product</button>
+  <p class="product-price">${{product.price}}</p>
+{{#link-to 'update-product' product.id}}<button class="btn btn-sm btn-default"> Update Product</button>{{/link-to}}
+<button class="btn btn-sm btn-default"{{action 'delete' product}}>Delete</button>
 </div>

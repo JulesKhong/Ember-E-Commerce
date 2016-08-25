@@ -2,7 +2,17 @@
   <img src={{product.image}} alt={{product.title}} />
 </div>
 <div class="col-sm-3">
+  <h4>{{product.title}}</h4>
+  <h5>Description:</h5>
+  <ul>
+    {{#each product.description as |description|}}
+      <li>- {{description}}</li>
+    {{/each}}
+  </ul>
+  <p>${{product.price}}</p>
+  <hr>
   <form>
+    <h4>Update Product Details</h4>
     <div class="form-group">
       <label for="title">Title</label>
       {{input value=title id="title" placeholder=product.title}}
@@ -21,5 +31,6 @@
     </div>
     <hr>
     <button class="btn btn-default" {{action 'updateProduct' product}}>Save Changes</button>
+    {{#link-to 'admin'}}<button class="btn btn-default">Cancel</button>{{/link-to}}
   </form>
 </div>
