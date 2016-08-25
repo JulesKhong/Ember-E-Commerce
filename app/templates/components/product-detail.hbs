@@ -10,5 +10,12 @@
   {{/each}}
 </ul>
 <p>${{product.price}}</p>
-<button class="btn btn-default" {{action 'addToCart' product}}>Add to Cart</button>
+{{#if product.cartIncludes}}
+  <hr>
+  <h5>This item is now in your cart</h5>
+  {{#link-to 'cart'}} View My Cart {{/link-to}}
+  {{#link-to 'store'}}<p>Keep browsing</p>{{/link-to}}
+{{else}}
+  <button class="btn btn-default" {{action 'addToCart' product}}>Add to Cart</button>
+{{/if}}
 </div>
