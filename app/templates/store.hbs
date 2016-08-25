@@ -1,5 +1,10 @@
 <h3>Products</h3>
-{{log model}}
-{{#each model.products as |product|}}
+<div>
+
+  <img class="suitcase" src="https://www.hautelookcdn.com/mms/57bdc03684887.jpg" alt="" />
+  <h2 class="offer">50% Off Luggage!</h2>
+  <hr>
+  {{#each model.products as |product|}}
   {{product-tile product=product}}
-{{/each}}
+  {{/each}}
+</div>
